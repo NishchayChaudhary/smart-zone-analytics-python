@@ -1,27 +1,16 @@
-# Core detection & tracking
-ultralytics>=8.2.0        # YOLOv8 + built-in ByteTrack support
-lap>=0.4.0                # Required by ByteTrack for linear assignment
+# Core detection (src/detection/detect.py)
+ultralytics>=8.2.0        # YOLOv8 model loading + inference
 
-# Deep learning backend (CPU / Apple MPS — no CUDA in Phase 1)
+# Deep learning backend required by ultralytics (CPU / Apple MPS -- no CUDA in Phase 1)
 torch>=2.2.0
 torchvision>=0.17.0
 
-# CV / numerical
+# CV / numerical (used throughout src/detection, src/tracking, src/analytics, src/utils)
 opencv-python>=4.9.0
 numpy>=1.26.0
 
-# Data handling & export
-pandas>=2.2.0
-
-# Model interoperability
-onnx>=1.16.0
-onnxruntime>=1.17.0
-
-# Dashboard
-streamlit>=1.33.0
-
-# Config parsing
+# Config parsing (config/config.yaml, loaded by src/utils/config_loader.py)
 pyyaml>=6.0.1
 
-# Plotting (heatmaps, dashboard charts)
-matplotlib>=3.8.0
+# Dashboard (src/dashboard/app.py, src/dashboard/components.py)
+streamlit>=1.33.0

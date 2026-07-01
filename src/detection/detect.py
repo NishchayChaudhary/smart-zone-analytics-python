@@ -18,15 +18,23 @@ PERSON_CLASS_ID = 0  # COCO class index for "person"
 class Detection:
     """Single detection result for one frame."""
 
-    def __init__(self, xyxy: np.ndarray, confidence: float, class_id: int):
+    def __init__(
+        self,
+        xyxy: np.ndarray,
+        confidence: float,
+        class_id: int,
+        class_name: str = "unknown",
+    ):
         self.xyxy = xyxy
         self.confidence = confidence
         self.class_id = class_id
+        self.class_name = class_name
 
     def __repr__(self) -> str:
         return (
             f"Detection(bbox={self.xyxy.tolist()}, "
-            f"conf={self.confidence:.2f}, class_id={self.class_id})"
+            f"conf={self.confidence:.2f}, class_id={self.class_id}, "
+            f"class_name={self.class_name!r})"
         )
 
 
@@ -75,11 +83,15 @@ class YOLODetector:
             boxes = result.boxes
             if boxes is None:
                 continue
+            # result.names maps class_id -> human-readable class name and is
+            # provided by ultralytics on every Results object.
+            names = result.names or {}
             for box in boxes:
                 xyxy = box.xyxy[0].cpu().numpy()
                 conf = float(box.conf[0].cpu().numpy())
                 cls_id = int(box.cls[0].cpu().numpy())
-                detections.append(Detection(xyxy, conf, cls_id))
+                cls_name = names.get(cls_id, str(cls_id))
+                detections.append(Detection(xyxy, conf, cls_id, cls_name))
 
         return detections
 

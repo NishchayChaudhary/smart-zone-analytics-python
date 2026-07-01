@@ -185,7 +185,6 @@ class Tracker:
                 missed_frames=trk.missed_frames,
             )
             for trk in self._tracks.values()
-            if trk.missed_frames == 0
         ]
 
     def _update_bytetrack(

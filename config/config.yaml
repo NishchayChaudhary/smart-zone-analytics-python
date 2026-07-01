@@ -16,7 +16,7 @@ tracker:
   max_missed_frames: 30             # Frames before a lost track is dropped
 
 video:
-  video_path: "videos/sample.mp4"   # Input video path
+  video_path: "videos/7652287-uhd_3840_2160_30fps.mp4"   # Input video path
   output_path: "outputs/processed_video.mp4"  # Annotated output video path
   save_video: true                  # Whether to write annotated output video
   save_frames: false                # Whether to save individual annotated frames
@@ -24,16 +24,15 @@ video:
   output_codec: "mp4v"              # Falls back to mp4v automatically if unsupported
 
 zones:
-  # Example polygon zone definitions (pixel coordinates).
   - name: "entry_zone"
-    polygon: [[100, 200], [400, 200], [400, 500], [100, 500]]
+    polygon: [[0, 850], [1920, 850], [1920, 1300], [0, 1300]]
   - name: "exit_zone"
-    polygon: [[500, 200], [800, 200], [800, 500], [500, 500]]
+    polygon: [[1920, 850], [3840, 850], [3840, 1300], [1920, 1300]]
 
 dashboard:
   title: "Smart Zone Analytics"
   refresh_interval_seconds: 1.0
 
 logging:
-  level: "INFO"                     # DEBUG, INFO, WARNING, ERROR
+  level: "DEBUG"                     # DEBUG, INFO, WARNING, ERROR
   log_file: "outputs/logs/app.log"

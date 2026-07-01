@@ -1,3 +1,3 @@
-from .detect import Detector
+from .detect import Detection, YOLODetector
 
-__all__ = ["Detector"]
+__all__ = ["Detection", "YOLODetector"]
