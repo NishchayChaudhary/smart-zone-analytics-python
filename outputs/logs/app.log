@@ -1,0 +1,530 @@
+2026-07-01 13:36:40,310 [INFO] smart_zone_analytics: Starting Smart Zone Analytics pipeline (config=/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/config/config.yaml)
+2026-07-01 13:37:04,759 [INFO] src.tracking.tracker: Initialized Tracker with backend='centroid'.
+2026-07-01 13:37:04,767 [INFO] src.analytics.zone_manager: Initialized ZoneManager with 2 zone(s): ['entry_zone', 'exit_zone']
+2026-07-01 13:37:04,768 [INFO] src.analytics.people_counter: Initialized PeopleCounter for zones: ['entry_zone', 'exit_zone']
+2026-07-01 13:37:04,768 [INFO] src.analytics.occupancy: Initialized OccupancyTracker for zones: ['entry_zone', 'exit_zone']
+2026-07-01 13:37:04,768 [ERROR] src.utils.video_utils: Video file not found: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/sample.mp4
+2026-07-01 13:37:04,768 [ERROR] smart_zone_analytics: Could not read input video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/sample.mp4
+Traceback (most recent call last):
+  File "/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/main.py", line 168, in run
+    info = get_video_info(input_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/src/utils/video_utils.py", line 92, in get_video_info
+    capture = load_video(video_path)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/src/utils/video_utils.py", line 67, in load_video
+    raise FileNotFoundError(f"Video file not found: {video_path}")
+FileNotFoundError: Video file not found: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/sample.mp4
+2026-07-01 13:39:11,943 [INFO] smart_zone_analytics: Starting Smart Zone Analytics pipeline (config=/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/config/config.yaml)
+2026-07-01 13:39:12,178 [INFO] src.tracking.tracker: Initialized Tracker with backend='centroid'.
+2026-07-01 13:39:12,186 [INFO] src.analytics.zone_manager: Initialized ZoneManager with 2 zone(s): ['entry_zone', 'exit_zone']
+2026-07-01 13:39:12,187 [INFO] src.analytics.people_counter: Initialized PeopleCounter for zones: ['entry_zone', 'exit_zone']
+2026-07-01 13:39:12,187 [INFO] src.analytics.occupancy: Initialized OccupancyTracker for zones: ['entry_zone', 'exit_zone']
+2026-07-01 13:39:12,188 [ERROR] src.utils.video_utils: Video file not found: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 13:39:12,188 [ERROR] smart_zone_analytics: Could not read input video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+Traceback (most recent call last):
+  File "/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/main.py", line 168, in run
+    info = get_video_info(input_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/src/utils/video_utils.py", line 92, in get_video_info
+    capture = load_video(video_path)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/src/utils/video_utils.py", line 67, in load_video
+    raise FileNotFoundError(f"Video file not found: {video_path}")
+FileNotFoundError: Video file not found: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 13:41:48,929 [INFO] smart_zone_analytics: Starting Smart Zone Analytics pipeline (config=/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/config/config.yaml)
+2026-07-01 13:41:49,146 [INFO] src.tracking.tracker: Initialized Tracker with backend='centroid'.
+2026-07-01 13:41:49,163 [INFO] src.analytics.zone_manager: Initialized ZoneManager with 2 zone(s): ['entry_zone', 'exit_zone']
+2026-07-01 13:41:49,163 [INFO] src.analytics.people_counter: Initialized PeopleCounter for zones: ['entry_zone', 'exit_zone']
+2026-07-01 13:41:49,164 [INFO] src.analytics.occupancy: Initialized OccupancyTracker for zones: ['entry_zone', 'exit_zone']
+2026-07-01 13:41:49,472 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 13:41:49,702 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 13:41:49,723 [INFO] src.utils.video_utils: Created video writer: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/outputs/processed_video.mp4 (3840x2160 @ 30.00 fps, codec=mp4v)
+2026-07-01 13:43:13,303 [INFO] smart_zone_analytics: Processed 30 frames...
+2026-07-01 13:43:41,815 [INFO] smart_zone_analytics: Processed 60 frames...
+2026-07-01 13:44:10,737 [INFO] smart_zone_analytics: Processed 90 frames...
+2026-07-01 13:44:43,559 [INFO] smart_zone_analytics: Processed 120 frames...
+2026-07-01 13:45:26,164 [INFO] smart_zone_analytics: Processed 150 frames...
+2026-07-01 13:46:14,098 [INFO] smart_zone_analytics: Processed 180 frames...
+2026-07-01 13:46:45,462 [INFO] smart_zone_analytics: Processed 210 frames...
+2026-07-01 13:46:52,090 [INFO] smart_zone_analytics: Pipeline finished. Processed 224 frames.
+2026-07-01 13:46:52,091 [INFO] smart_zone_analytics: Final summary: total_occupancy=0, total_entries=0, total_exits=0
+2026-07-01 13:46:52,091 [INFO] smart_zone_analytics:   Zone 'entry_zone': occupancy=0 max=0 entries=0 exits=0
+2026-07-01 13:46:52,092 [INFO] smart_zone_analytics:   Zone 'exit_zone': occupancy=0 max=0 entries=0 exits=0
+2026-07-01 13:55:05,809 [INFO] smart_zone_analytics: Starting Smart Zone Analytics pipeline (config=/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/config/config.yaml)
+2026-07-01 13:55:05,955 [INFO] src.tracking.tracker: Initialized Tracker with backend='centroid'.
+2026-07-01 13:55:05,955 [INFO] src.analytics.zone_manager: Initialized ZoneManager with 2 zone(s): ['entry_zone', 'exit_zone']
+2026-07-01 13:55:05,956 [INFO] src.analytics.people_counter: Initialized PeopleCounter for zones: ['entry_zone', 'exit_zone']
+2026-07-01 13:55:05,956 [INFO] src.analytics.occupancy: Initialized OccupancyTracker for zones: ['entry_zone', 'exit_zone']
+2026-07-01 13:55:06,134 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 13:55:06,259 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 13:55:06,267 [INFO] src.utils.video_utils: Created video writer: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/outputs/processed_video.mp4 (3840x2160 @ 30.00 fps, codec=mp4v)
+2026-07-01 13:55:27,000 [INFO] smart_zone_analytics: Processed 30 frames...
+2026-07-01 13:55:39,959 [INFO] smart_zone_analytics: Processed 60 frames...
+2026-07-01 13:55:48,931 [INFO] smart_zone_analytics: Processed 90 frames...
+2026-07-01 13:56:14,722 [INFO] smart_zone_analytics: Processed 120 frames...
+2026-07-01 13:56:42,426 [INFO] smart_zone_analytics: Processed 150 frames...
+2026-07-01 13:57:12,017 [INFO] smart_zone_analytics: Processed 180 frames...
+2026-07-01 13:57:45,751 [INFO] smart_zone_analytics: Processed 210 frames...
+2026-07-01 13:58:00,355 [INFO] smart_zone_analytics: Pipeline finished. Processed 224 frames.
+2026-07-01 13:58:00,362 [INFO] smart_zone_analytics: Final summary: total_occupancy=0, total_entries=0, total_exits=0
+2026-07-01 13:58:00,362 [INFO] smart_zone_analytics:   Zone 'entry_zone': occupancy=0 max=0 entries=0 exits=0
+2026-07-01 13:58:00,362 [INFO] smart_zone_analytics:   Zone 'exit_zone': occupancy=0 max=0 entries=0 exits=0
+2026-07-01 14:05:15,508 [INFO] smart_zone_analytics: Starting Smart Zone Analytics pipeline (config=/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/config/config.yaml)
+2026-07-01 14:05:15,615 [INFO] src.tracking.tracker: Initialized Tracker with backend='centroid'.
+2026-07-01 14:05:15,615 [INFO] src.analytics.zone_manager: Initialized ZoneManager with 2 zone(s): ['entry_zone', 'exit_zone']
+2026-07-01 14:05:15,615 [INFO] src.analytics.people_counter: Initialized PeopleCounter for zones: ['entry_zone', 'exit_zone']
+2026-07-01 14:05:15,615 [INFO] src.analytics.occupancy: Initialized OccupancyTracker for zones: ['entry_zone', 'exit_zone']
+2026-07-01 14:05:15,737 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 14:05:15,820 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 14:05:15,826 [INFO] src.utils.video_utils: Created video writer: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/outputs/processed_video.mp4 (3840x2160 @ 30.00 fps, codec=mp4v)
+2026-07-01 14:05:16,488 [INFO] smart_zone_analytics: DEBUG track_id=1 bbox=[     1871.7      592.54      2136.1      1336.1] centroid=(2004, 964)
+2026-07-01 14:05:16,491 [INFO] smart_zone_analytics: DEBUG track_id=2 bbox=[     2137.8      592.92      2414.6      1341.3] centroid=(2276, 967)
+2026-07-01 14:05:16,492 [INFO] smart_zone_analytics: DEBUG track_id=3 bbox=[     368.16      648.94      706.29      1330.8] centroid=(537, 990)
+2026-07-01 14:05:16,492 [INFO] smart_zone_analytics: DEBUG track_id=4 bbox=[     2640.4           0      3612.6      2142.6] centroid=(3127, 1071)
+2026-07-01 14:05:16,493 [INFO] smart_zone_analytics: DEBUG track_id=5 bbox=[     1.4641      589.06       263.7      1330.2] centroid=(133, 960)
+2026-07-01 14:05:16,493 [INFO] smart_zone_analytics: DEBUG track_id=6 bbox=[     3325.9           0      3838.2        2144] centroid=(3582, 1072)
+2026-07-01 14:05:16,494 [INFO] smart_zone_analytics: DEBUG track_id=7 bbox=[     1464.5      656.21      1763.6      1334.9] centroid=(1614, 996)
+2026-07-01 14:05:17,218 [INFO] smart_zone_analytics: DEBUG track_id=1 bbox=[     1872.9      592.61      2136.3      1336.6] centroid=(2005, 965)
+2026-07-01 14:05:17,221 [INFO] smart_zone_analytics: DEBUG track_id=2 bbox=[     2137.2      593.76        2416      1340.4] centroid=(2277, 967)
+2026-07-01 14:05:17,221 [INFO] smart_zone_analytics: DEBUG track_id=3 bbox=[     366.31      650.08      704.35        1331] centroid=(535, 991)
+2026-07-01 14:05:17,221 [INFO] smart_zone_analytics: DEBUG track_id=4 bbox=[     2645.7           0      3640.3      2143.6] centroid=(3143, 1072)
+2026-07-01 14:05:17,222 [INFO] smart_zone_analytics: DEBUG track_id=5 bbox=[     1.3607      587.83      263.51      1329.1] centroid=(132, 958)
+2026-07-01 14:05:17,222 [INFO] smart_zone_analytics: DEBUG track_id=6 bbox=[       3391      52.036      3837.6      2144.7] centroid=(3614, 1098)
+2026-07-01 14:05:17,222 [INFO] smart_zone_analytics: DEBUG track_id=7 bbox=[     1465.2      653.84      1763.6      1344.3] centroid=(1614, 999)
+2026-07-01 14:05:18,296 [INFO] smart_zone_analytics: DEBUG track_id=1 bbox=[     1872.9      592.99      2136.7      1336.4] centroid=(2005, 965)
+2026-07-01 14:05:18,304 [INFO] smart_zone_analytics: DEBUG track_id=2 bbox=[     2138.2      595.83      2414.7      1340.6] centroid=(2276, 968)
+2026-07-01 14:05:18,305 [INFO] smart_zone_analytics: DEBUG track_id=3 bbox=[     364.31      649.15      700.55      1332.6] centroid=(532, 991)
+2026-07-01 14:05:18,305 [INFO] smart_zone_analytics: DEBUG track_id=4 bbox=[     2647.4           0      3672.3        2145] centroid=(3160, 1073)
+2026-07-01 14:05:18,305 [INFO] smart_zone_analytics: DEBUG track_id=5 bbox=[     1.8531      588.67      262.83      1330.5] centroid=(132, 960)
+2026-07-01 14:05:18,305 [INFO] smart_zone_analytics: DEBUG track_id=6 bbox=[     3410.2      117.99      3838.8      2144.2] centroid=(3624, 1131)
+2026-07-01 14:05:18,306 [INFO] smart_zone_analytics: DEBUG track_id=7 bbox=[     1464.9      657.05      1764.1        1336] centroid=(1614, 997)
+2026-07-01 14:05:20,505 [INFO] smart_zone_analytics: DEBUG track_id=1 bbox=[     1873.4      595.86        2140      1337.4] centroid=(2007, 967)
+2026-07-01 14:05:20,510 [INFO] smart_zone_analytics: DEBUG track_id=2 bbox=[     2135.9      600.49      2415.1      1343.1] centroid=(2275, 972)
+2026-07-01 14:05:20,510 [INFO] smart_zone_analytics: DEBUG track_id=3 bbox=[     365.36      653.43      688.19      1335.5] centroid=(527, 994)
+2026-07-01 14:05:20,511 [INFO] smart_zone_analytics: DEBUG track_id=4 bbox=[     2657.2      1.7219      3726.4      2143.2] centroid=(3192, 1072)
+2026-07-01 14:05:20,511 [INFO] smart_zone_analytics: DEBUG track_id=5 bbox=[     2.2391      592.63      261.84      1337.2] centroid=(132, 965)
+2026-07-01 14:05:20,511 [INFO] smart_zone_analytics: DEBUG track_id=6 bbox=[     3494.4      228.39      3838.9      2144.6] centroid=(3667, 1186)
+2026-07-01 14:05:20,511 [INFO] smart_zone_analytics: DEBUG track_id=8 bbox=[     1470.1      658.11      1767.3      1584.8] centroid=(1619, 1121)
+2026-07-01 14:05:43,130 [INFO] smart_zone_analytics: DEBUG track_id=1 bbox=[     1873.2      597.17      2140.6        1340] centroid=(2007, 969)
+2026-07-01 14:05:43,141 [INFO] smart_zone_analytics: DEBUG track_id=2 bbox=[     2133.5       601.7      2412.8      1346.2] centroid=(2273, 974)
+2026-07-01 14:05:43,143 [INFO] smart_zone_analytics: DEBUG track_id=3 bbox=[     360.97      656.09       684.5      1337.3] centroid=(523, 997)
+2026-07-01 14:05:43,143 [INFO] smart_zone_analytics: DEBUG track_id=4 bbox=[     2657.5           0      3800.2      2139.6] centroid=(3229, 1070)
+2026-07-01 14:05:43,144 [INFO] smart_zone_analytics: DEBUG track_id=5 bbox=[     3.5822      596.18       260.1      1341.1] centroid=(132, 969)
+2026-07-01 14:05:43,145 [INFO] smart_zone_analytics: DEBUG track_id=6 bbox=[     3568.9      295.67      3838.9      2146.2] centroid=(3704, 1221)
+2026-07-01 14:05:43,145 [INFO] smart_zone_analytics: DEBUG track_id=7 bbox=[       1471      657.73      1769.1      1340.5] centroid=(1620, 999)
+2026-07-01 14:05:43,145 [INFO] smart_zone_analytics: DEBUG track_id=8 bbox=[     1468.6      650.14      1775.6      1597.4] centroid=(1622, 1124)
+2026-07-01 14:05:45,682 [INFO] smart_zone_analytics: DEBUG track_id=1 bbox=[     1871.9      601.62      2140.8      1345.2] centroid=(2006, 973)
+2026-07-01 14:05:45,687 [INFO] smart_zone_analytics: DEBUG track_id=2 bbox=[     2132.7      607.17        2410      1348.5] centroid=(2271, 978)
+2026-07-01 14:05:45,688 [INFO] smart_zone_analytics: DEBUG track_id=3 bbox=[     349.37       662.1      676.74      1343.1] centroid=(513, 1003)
+2026-07-01 14:05:45,688 [INFO] smart_zone_analytics: DEBUG track_id=4 bbox=[     2653.9           0      3837.8      2138.2] centroid=(3246, 1069)
+2026-07-01 14:05:45,689 [INFO] smart_zone_analytics: DEBUG track_id=5 bbox=[     3.2057      602.14      259.09      1346.3] centroid=(131, 974)
+2026-07-01 14:05:45,690 [INFO] smart_zone_analytics: DEBUG track_id=7 bbox=[     1470.8      661.81      1771.1      1346.6] centroid=(1621, 1004)
+2026-07-01 14:05:45,690 [INFO] smart_zone_analytics: DEBUG track_id=8 bbox=[     1466.9      655.77        1778      1601.8] centroid=(1622, 1129)
+2026-07-01 14:05:46,084 [INFO] smart_zone_analytics: DEBUG track_id=1 bbox=[     1871.9      601.11      2139.5      1349.9] centroid=(2006, 976)
+2026-07-01 14:05:46,085 [INFO] smart_zone_analytics: DEBUG track_id=2 bbox=[       2133       609.4      2410.5      1351.9] centroid=(2272, 981)
+2026-07-01 14:05:46,085 [INFO] smart_zone_analytics: DEBUG track_id=3 bbox=[     344.92      666.71      672.46      1345.5] centroid=(509, 1006)
+2026-07-01 14:05:46,085 [INFO] smart_zone_analytics: DEBUG track_id=4 bbox=[     2651.5       2.012      3838.6      2138.4] centroid=(3245, 1070)
+2026-07-01 14:05:46,086 [INFO] smart_zone_analytics: DEBUG track_id=5 bbox=[     2.3035       604.3      258.87      1346.3] centroid=(131, 975)
+2026-07-01 14:05:46,086 [INFO] smart_zone_analytics: DEBUG track_id=7 bbox=[     1470.2      666.78      1779.1      1348.2] centroid=(1625, 1007)
+2026-07-01 14:05:46,448 [INFO] smart_zone_analytics: DEBUG track_id=1 bbox=[     1872.1      602.64      2137.1      1353.3] centroid=(2005, 978)
+2026-07-01 14:05:46,448 [INFO] smart_zone_analytics: DEBUG track_id=2 bbox=[     2130.9      613.46        2404      1348.7] centroid=(2267, 981)
+2026-07-01 14:05:46,449 [INFO] smart_zone_analytics: DEBUG track_id=3 bbox=[     341.52      671.18      669.37      1349.2] centroid=(505, 1010)
+2026-07-01 14:05:46,449 [INFO] smart_zone_analytics: DEBUG track_id=4 bbox=[     2648.9      3.4924      3839.3      2137.7] centroid=(3244, 1071)
+2026-07-01 14:05:46,449 [INFO] smart_zone_analytics: DEBUG track_id=5 bbox=[      1.664      606.26      258.37      1348.9] centroid=(130, 978)
+2026-07-01 14:05:46,450 [INFO] smart_zone_analytics: DEBUG track_id=7 bbox=[     1468.2      667.29      1778.9        1349] centroid=(1624, 1008)
+2026-07-01 14:05:46,450 [INFO] smart_zone_analytics: DEBUG track_id=8 bbox=[     1465.4      664.43      1785.2      1612.2] centroid=(1625, 1138)
+2026-07-01 14:05:46,800 [INFO] smart_zone_analytics: DEBUG track_id=1 bbox=[     1871.4      606.26      2136.6        1357] centroid=(2004, 982)
+2026-07-01 14:05:46,800 [INFO] smart_zone_analytics: DEBUG track_id=2 bbox=[     2129.7      615.85        2401      1354.4] centroid=(2265, 985)
+2026-07-01 14:05:46,801 [INFO] smart_zone_analytics: DEBUG track_id=3 bbox=[      336.5      675.23      661.01      1354.2] centroid=(499, 1015)
+2026-07-01 14:05:46,801 [INFO] smart_zone_analytics: DEBUG track_id=4 bbox=[       2638      2.1086      3839.2      2139.3] centroid=(3239, 1071)
+2026-07-01 14:05:46,801 [INFO] smart_zone_analytics: DEBUG track_id=5 bbox=[     2.3718      610.26      258.59        1345] centroid=(130, 978)
+2026-07-01 14:05:46,802 [INFO] smart_zone_analytics: DEBUG track_id=8 bbox=[     1470.7      679.22      1780.6      1614.1] centroid=(1626, 1147)
+2026-07-01 14:05:47,186 [INFO] smart_zone_analytics: DEBUG track_id=1 bbox=[     1872.2      606.81        2137        1360] centroid=(2005, 983)
+2026-07-01 14:05:47,186 [INFO] smart_zone_analytics: DEBUG track_id=2 bbox=[     2126.7         616      2400.5      1354.7] centroid=(2264, 985)
+2026-07-01 14:05:47,186 [INFO] smart_zone_analytics: DEBUG track_id=3 bbox=[     335.47      679.06      659.79      1355.5] centroid=(498, 1017)
+2026-07-01 14:05:47,187 [INFO] smart_zone_analytics: DEBUG track_id=4 bbox=[     2635.1      2.7546        3839      2139.6] centroid=(3237, 1071)
+2026-07-01 14:05:47,187 [INFO] smart_zone_analytics: DEBUG track_id=5 bbox=[     3.3938      611.53      258.61      1345.8] centroid=(131, 979)
+2026-07-01 14:05:47,187 [INFO] smart_zone_analytics: DEBUG track_id=8 bbox=[     1471.9      677.72      1781.6      1617.8] centroid=(1627, 1148)
+2026-07-01 14:05:52,863 [INFO] smart_zone_analytics: Processed 30 frames...
+2026-07-01 14:06:00,795 [INFO] smart_zone_analytics: Processed 60 frames...
+2026-07-01 14:06:08,750 [INFO] smart_zone_analytics: Processed 90 frames...
+2026-07-01 14:06:16,899 [INFO] smart_zone_analytics: Processed 120 frames...
+2026-07-01 14:06:24,887 [INFO] smart_zone_analytics: Processed 150 frames...
+2026-07-01 14:06:32,961 [INFO] smart_zone_analytics: Processed 180 frames...
+2026-07-01 14:06:41,232 [INFO] smart_zone_analytics: Processed 210 frames...
+2026-07-01 14:06:45,273 [INFO] smart_zone_analytics: Pipeline finished. Processed 224 frames.
+2026-07-01 14:06:45,273 [INFO] smart_zone_analytics: Final summary: total_occupancy=0, total_entries=0, total_exits=0
+2026-07-01 14:06:45,273 [INFO] smart_zone_analytics:   Zone 'entry_zone': occupancy=0 max=0 entries=0 exits=0
+2026-07-01 14:06:45,274 [INFO] smart_zone_analytics:   Zone 'exit_zone': occupancy=0 max=0 entries=0 exits=0
+2026-07-01 14:09:51,135 [INFO] smart_zone_analytics: Starting Smart Zone Analytics pipeline (config=/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/config/config.yaml)
+2026-07-01 14:09:51,241 [INFO] src.tracking.tracker: Initialized Tracker with backend='centroid'.
+2026-07-01 14:09:51,241 [INFO] src.analytics.zone_manager: Initialized ZoneManager with 2 zone(s): ['entry_zone', 'exit_zone']
+2026-07-01 14:09:51,241 [INFO] src.analytics.people_counter: Initialized PeopleCounter for zones: ['entry_zone', 'exit_zone']
+2026-07-01 14:09:51,241 [INFO] src.analytics.occupancy: Initialized OccupancyTracker for zones: ['entry_zone', 'exit_zone']
+2026-07-01 14:09:51,374 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 14:09:51,459 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 14:09:51,465 [INFO] src.utils.video_utils: Created video writer: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/outputs/processed_video.mp4 (3840x2160 @ 30.00 fps, codec=mp4v)
+2026-07-01 14:10:10,927 [INFO] smart_zone_analytics: Processed 30 frames...
+2026-07-01 14:10:35,224 [INFO] smart_zone_analytics: Processed 60 frames...
+2026-07-01 14:10:59,824 [INFO] smart_zone_analytics: Processed 90 frames...
+2026-07-01 14:11:13,225 [INFO] smart_zone_analytics: Processed 120 frames...
+2026-07-01 14:11:24,626 [INFO] smart_zone_analytics: Processed 150 frames...
+2026-07-01 14:11:43,687 [INFO] smart_zone_analytics: Processed 180 frames...
+2026-07-01 14:11:53,876 [INFO] smart_zone_analytics: Processed 210 frames...
+2026-07-01 14:11:59,031 [INFO] smart_zone_analytics: Pipeline finished. Processed 224 frames.
+2026-07-01 14:11:59,033 [INFO] smart_zone_analytics: Final summary: total_occupancy=2, total_entries=81, total_exits=79
+2026-07-01 14:11:59,033 [INFO] smart_zone_analytics:   Zone 'entry_zone': occupancy=2 max=7 entries=65 exits=63
+2026-07-01 14:11:59,033 [INFO] smart_zone_analytics:   Zone 'exit_zone': occupancy=0 max=4 entries=16 exits=16
+2026-07-01 14:15:00,869 [INFO] smart_zone_analytics: Starting Smart Zone Analytics pipeline (config=/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/config/config.yaml)
+2026-07-01 14:15:00,967 [INFO] src.tracking.tracker: Initialized Tracker with backend='centroid'.
+2026-07-01 14:15:00,967 [DEBUG] src.analytics.zone_manager: Added zone 'entry_zone' with 4 vertices.
+2026-07-01 14:15:00,967 [DEBUG] src.analytics.zone_manager: Added zone 'exit_zone' with 4 vertices.
+2026-07-01 14:15:00,967 [INFO] src.analytics.zone_manager: Initialized ZoneManager with 2 zone(s): ['entry_zone', 'exit_zone']
+2026-07-01 14:15:00,967 [INFO] src.analytics.people_counter: Initialized PeopleCounter for zones: ['entry_zone', 'exit_zone']
+2026-07-01 14:15:00,967 [INFO] src.analytics.occupancy: Initialized OccupancyTracker for zones: ['entry_zone', 'exit_zone']
+2026-07-01 14:15:01,094 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 14:15:01,095 [DEBUG] src.utils.video_utils: Video info for /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4: VideoInfo(width=3840, height=2160, fps=30.0, frame_count=224, codec='h264')
+2026-07-01 14:15:01,178 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 14:15:01,184 [INFO] src.utils.video_utils: Created video writer: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/outputs/processed_video.mp4 (3840x2160 @ 30.00 fps, codec=mp4v)
+2026-07-01 14:15:01,885 [DEBUG] src.tracking.tracker: Created new track_id=1
+2026-07-01 14:15:01,886 [DEBUG] src.tracking.tracker: Created new track_id=2
+2026-07-01 14:15:01,886 [DEBUG] src.tracking.tracker: Created new track_id=3
+2026-07-01 14:15:01,886 [DEBUG] src.tracking.tracker: Created new track_id=4
+2026-07-01 14:15:01,886 [DEBUG] src.tracking.tracker: Created new track_id=5
+2026-07-01 14:15:01,886 [DEBUG] src.tracking.tracker: Created new track_id=6
+2026-07-01 14:15:01,886 [DEBUG] src.tracking.tracker: Created new track_id=7
+2026-07-01 14:15:01,887 [DEBUG] src.analytics.people_counter: Track 1 entered zone 'exit_zone'.
+2026-07-01 14:15:01,887 [DEBUG] src.analytics.people_counter: Track 2 entered zone 'exit_zone'.
+2026-07-01 14:15:01,887 [DEBUG] src.analytics.people_counter: Track 3 entered zone 'entry_zone'.
+2026-07-01 14:15:01,887 [DEBUG] src.analytics.people_counter: Track 4 entered zone 'exit_zone'.
+2026-07-01 14:15:01,887 [DEBUG] src.analytics.people_counter: Track 5 entered zone 'entry_zone'.
+2026-07-01 14:15:01,887 [DEBUG] src.analytics.people_counter: Track 6 entered zone 'exit_zone'.
+2026-07-01 14:15:01,887 [DEBUG] src.analytics.people_counter: Track 7 entered zone 'entry_zone'.
+2026-07-01 14:15:01,888 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 3
+2026-07-01 14:15:01,888 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'exit_zone': 4
+2026-07-01 14:15:04,740 [DEBUG] src.tracking.tracker: Created new track_id=8
+2026-07-01 14:15:04,769 [DEBUG] src.analytics.people_counter: Track 8 entered zone 'entry_zone'.
+2026-07-01 14:15:04,769 [DEBUG] src.analytics.people_counter: Track 7 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:16,376 [DEBUG] src.analytics.people_counter: Track 7 entered zone 'entry_zone'.
+2026-07-01 14:15:16,379 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 4
+2026-07-01 14:15:16,866 [DEBUG] src.analytics.people_counter: Track 6 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:15:17,121 [DEBUG] src.analytics.people_counter: Track 8 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:17,375 [DEBUG] src.analytics.people_counter: Track 8 entered zone 'entry_zone'.
+2026-07-01 14:15:17,626 [DEBUG] src.analytics.people_counter: Track 7 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:19,426 [DEBUG] src.analytics.people_counter: Track 7 entered zone 'entry_zone'.
+2026-07-01 14:15:19,426 [DEBUG] src.analytics.people_counter: Track 8 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:19,682 [DEBUG] src.analytics.people_counter: Track 8 entered zone 'entry_zone'.
+2026-07-01 14:15:19,682 [DEBUG] src.analytics.people_counter: Track 7 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:20,185 [DEBUG] src.analytics.people_counter: Track 7 entered zone 'entry_zone'.
+2026-07-01 14:15:20,185 [DEBUG] src.analytics.people_counter: Track 8 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:20,692 [DEBUG] src.analytics.people_counter: Track 8 entered zone 'entry_zone'.
+2026-07-01 14:15:21,204 [DEBUG] src.analytics.people_counter: Track 7 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:21,465 [DEBUG] src.analytics.people_counter: Track 7 entered zone 'entry_zone'.
+2026-07-01 14:15:22,980 [DEBUG] src.analytics.people_counter: Track 7 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:23,080 [INFO] smart_zone_analytics: Processed 30 frames...
+2026-07-01 14:15:23,229 [DEBUG] src.tracking.tracker: Created new track_id=9
+2026-07-01 14:15:23,230 [DEBUG] src.analytics.people_counter: Track 7 entered zone 'entry_zone'.
+2026-07-01 14:15:23,230 [DEBUG] src.analytics.people_counter: Track 9 entered zone 'entry_zone'.
+2026-07-01 14:15:23,230 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 5
+2026-07-01 14:15:23,477 [DEBUG] src.analytics.people_counter: Track 9 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:23,723 [DEBUG] src.tracking.tracker: Created new track_id=10
+2026-07-01 14:15:23,723 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:15:23,724 [DEBUG] src.analytics.people_counter: Track 1 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:15:23,976 [DEBUG] src.tracking.tracker: Created new track_id=11
+2026-07-01 14:15:23,976 [DEBUG] src.analytics.people_counter: Track 9 entered zone 'entry_zone'.
+2026-07-01 14:15:23,976 [DEBUG] src.analytics.people_counter: Track 11 entered zone 'entry_zone'.
+2026-07-01 14:15:23,976 [DEBUG] src.analytics.people_counter: Track 5 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:23,976 [DEBUG] src.analytics.people_counter: Track 7 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:24,481 [DEBUG] src.tracking.tracker: Dropping stale track_id=6
+2026-07-01 14:15:24,984 [DEBUG] src.analytics.people_counter: Track 5 entered zone 'entry_zone'.
+2026-07-01 14:15:25,497 [DEBUG] src.analytics.people_counter: Track 7 entered zone 'entry_zone'.
+2026-07-01 14:15:25,497 [DEBUG] src.analytics.people_counter: Track 9 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:25,768 [DEBUG] src.analytics.people_counter: Track 9 entered zone 'entry_zone'.
+2026-07-01 14:15:25,768 [DEBUG] src.analytics.people_counter: Track 11 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:26,023 [DEBUG] src.analytics.people_counter: Track 9 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:26,532 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:15:26,532 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:15:26,788 [DEBUG] src.analytics.people_counter: Track 11 entered zone 'entry_zone'.
+2026-07-01 14:15:26,788 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 6
+2026-07-01 14:15:27,034 [DEBUG] src.analytics.people_counter: Track 9 entered zone 'entry_zone'.
+2026-07-01 14:15:27,034 [DEBUG] src.analytics.people_counter: Track 3 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:27,034 [DEBUG] src.analytics.people_counter: Track 7 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:27,575 [DEBUG] src.analytics.people_counter: Track 3 entered zone 'entry_zone'.
+2026-07-01 14:15:27,576 [DEBUG] src.analytics.people_counter: Track 9 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:27,576 [DEBUG] src.analytics.people_counter: Track 11 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:27,827 [DEBUG] src.analytics.people_counter: Track 7 entered zone 'entry_zone'.
+2026-07-01 14:15:27,828 [DEBUG] src.analytics.people_counter: Track 9 entered zone 'entry_zone'.
+2026-07-01 14:15:27,828 [DEBUG] src.analytics.people_counter: Track 11 entered zone 'entry_zone'.
+2026-07-01 14:15:27,828 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 7
+2026-07-01 14:15:28,081 [DEBUG] src.analytics.people_counter: Track 11 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:28,331 [DEBUG] src.tracking.tracker: Created new track_id=12
+2026-07-01 14:15:28,331 [DEBUG] src.analytics.people_counter: Track 12 entered zone 'exit_zone'.
+2026-07-01 14:15:28,331 [DEBUG] src.analytics.people_counter: Track 4 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:15:28,583 [DEBUG] src.analytics.people_counter: Track 7 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:28,842 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:15:28,843 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:15:29,091 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:15:29,091 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:15:29,091 [DEBUG] src.analytics.people_counter: Track 9 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:29,351 [DEBUG] src.analytics.people_counter: Track 9 entered zone 'entry_zone'.
+2026-07-01 14:15:29,858 [DEBUG] src.analytics.people_counter: Track 9 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:30,616 [DEBUG] src.analytics.people_counter: Track 9 entered zone 'entry_zone'.
+2026-07-01 14:15:30,616 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:15:30,616 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:15:30,714 [INFO] smart_zone_analytics: Processed 60 frames...
+2026-07-01 14:15:31,120 [DEBUG] src.analytics.people_counter: Track 9 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:31,365 [DEBUG] src.tracking.tracker: Dropping stale track_id=1
+2026-07-01 14:15:31,618 [DEBUG] src.analytics.people_counter: Track 9 entered zone 'entry_zone'.
+2026-07-01 14:15:31,619 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:15:31,619 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:15:31,934 [DEBUG] src.analytics.people_counter: Track 9 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:32,203 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:15:32,203 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:15:32,535 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:15:32,535 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:15:32,896 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:15:32,897 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:15:33,952 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:15:33,953 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:15:35,220 [DEBUG] src.tracking.tracker: Created new track_id=13
+2026-07-01 14:15:35,221 [DEBUG] src.analytics.people_counter: Track 13 entered zone 'entry_zone'.
+2026-07-01 14:15:35,734 [DEBUG] src.tracking.tracker: Created new track_id=14
+2026-07-01 14:15:35,734 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'entry_zone'.
+2026-07-01 14:15:35,992 [DEBUG] src.tracking.tracker: Dropping stale track_id=11
+2026-07-01 14:15:36,245 [DEBUG] src.analytics.people_counter: Track 4 entered zone 'exit_zone'.
+2026-07-01 14:15:36,246 [DEBUG] src.analytics.people_counter: Track 7 entered zone 'entry_zone'.
+2026-07-01 14:15:36,246 [DEBUG] src.analytics.people_counter: Track 12 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:15:36,764 [DEBUG] src.analytics.people_counter: Track 7 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:37,016 [DEBUG] src.analytics.people_counter: Track 14 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:38,718 [INFO] smart_zone_analytics: Processed 90 frames...
+2026-07-01 14:15:39,429 [DEBUG] src.analytics.people_counter: Track 9 entered zone 'entry_zone'.
+2026-07-01 14:15:39,690 [DEBUG] src.analytics.people_counter: Track 9 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:40,221 [DEBUG] src.tracking.tracker: Created new track_id=15
+2026-07-01 14:15:40,221 [DEBUG] src.analytics.people_counter: Track 15 entered zone 'exit_zone'.
+2026-07-01 14:15:41,268 [DEBUG] src.analytics.people_counter: Track 2 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:15:41,526 [DEBUG] src.analytics.people_counter: Track 13 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:42,863 [DEBUG] src.analytics.people_counter: Track 4 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:15:43,141 [DEBUG] src.tracking.tracker: Created new track_id=16
+2026-07-01 14:15:43,399 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'entry_zone'.
+2026-07-01 14:15:44,191 [DEBUG] src.tracking.tracker: Dropping stale track_id=12
+2026-07-01 14:15:44,714 [DEBUG] src.tracking.tracker: Dropping stale track_id=7
+2026-07-01 14:15:46,623 [INFO] smart_zone_analytics: Processed 120 frames...
+2026-07-01 14:15:47,557 [DEBUG] src.tracking.tracker: Dropping stale track_id=9
+2026-07-01 14:15:47,557 [DEBUG] src.analytics.people_counter: Track 14 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:48,586 [DEBUG] src.tracking.tracker: Created new track_id=17
+2026-07-01 14:15:48,587 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'entry_zone'.
+2026-07-01 14:15:48,587 [DEBUG] src.analytics.people_counter: Track 17 entered zone 'entry_zone'.
+2026-07-01 14:15:48,841 [DEBUG] src.analytics.people_counter: Track 5 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:48,841 [DEBUG] src.analytics.people_counter: Track 14 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:49,118 [DEBUG] src.tracking.tracker: Dropping stale track_id=2
+2026-07-01 14:15:49,394 [DEBUG] src.tracking.tracker: Dropping stale track_id=13
+2026-07-01 14:15:49,944 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'entry_zone'.
+2026-07-01 14:15:49,945 [DEBUG] src.analytics.people_counter: Track 17 exited zone 'entry_zone'.
+2026-07-01 14:15:50,730 [DEBUG] src.tracking.tracker: Dropping stale track_id=4
+2026-07-01 14:15:50,731 [DEBUG] src.tracking.tracker: Created new track_id=18
+2026-07-01 14:15:50,731 [DEBUG] src.analytics.people_counter: Track 17 entered zone 'entry_zone'.
+2026-07-01 14:15:50,731 [DEBUG] src.analytics.people_counter: Track 18 entered zone 'entry_zone'.
+2026-07-01 14:15:51,250 [DEBUG] src.analytics.people_counter: Track 17 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:51,250 [DEBUG] src.analytics.people_counter: Track 18 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:51,517 [DEBUG] src.tracking.tracker: Dropping stale track_id=16
+2026-07-01 14:15:52,590 [DEBUG] src.analytics.people_counter: Track 18 entered zone 'entry_zone'.
+2026-07-01 14:15:52,590 [DEBUG] src.analytics.people_counter: Track 8 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:52,590 [DEBUG] src.analytics.people_counter: Track 10 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:53,165 [DEBUG] src.analytics.people_counter: Track 18 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:53,715 [DEBUG] src.analytics.people_counter: Track 18 entered zone 'entry_zone'.
+2026-07-01 14:15:53,968 [DEBUG] src.analytics.people_counter: Track 18 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:54,237 [DEBUG] src.analytics.people_counter: Track 18 entered zone 'entry_zone'.
+2026-07-01 14:15:54,497 [DEBUG] src.tracking.tracker: Created new track_id=19
+2026-07-01 14:15:54,497 [DEBUG] src.analytics.people_counter: Track 18 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:54,603 [INFO] smart_zone_analytics: Processed 150 frames...
+2026-07-01 14:15:54,752 [DEBUG] src.analytics.people_counter: Track 18 entered zone 'entry_zone'.
+2026-07-01 14:15:55,287 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:15:55,287 [DEBUG] src.analytics.people_counter: Track 18 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:55,287 [DEBUG] src.analytics.people_counter: Track 14 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:55,550 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:15:55,817 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'entry_zone'.
+2026-07-01 14:15:56,113 [DEBUG] src.analytics.people_counter: Track 3 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:56,113 [DEBUG] src.analytics.people_counter: Track 14 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:56,405 [DEBUG] src.analytics.people_counter: Track 3 entered zone 'entry_zone'.
+2026-07-01 14:15:56,405 [DEBUG] src.analytics.people_counter: Track 15 exited zone 'exit_zone'.
+2026-07-01 14:15:56,691 [DEBUG] src.analytics.people_counter: Track 8 entered zone 'entry_zone'.
+2026-07-01 14:15:56,974 [DEBUG] src.tracking.tracker: Dropping stale track_id=5
+2026-07-01 14:15:56,975 [DEBUG] src.analytics.people_counter: Track 8 exited zone 'entry_zone'.
+2026-07-01 14:15:56,975 [DEBUG] src.analytics.people_counter: Track 15 entered zone 'exit_zone'.
+2026-07-01 14:15:56,975 [DEBUG] src.analytics.people_counter: Track 18 entered zone 'entry_zone'.
+2026-07-01 14:15:57,225 [DEBUG] src.analytics.people_counter: Track 18 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:15:58,879 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:15:59,976 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:15:59,977 [DEBUG] src.analytics.people_counter: Track 3 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:16:00,245 [DEBUG] src.analytics.people_counter: Track 3 entered zone 'entry_zone'.
+2026-07-01 14:16:00,245 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:16:00,500 [DEBUG] src.analytics.people_counter: Track 3 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:16:00,757 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:16:01,029 [DEBUG] src.analytics.people_counter: Track 3 entered zone 'entry_zone'.
+2026-07-01 14:16:01,287 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'entry_zone'.
+2026-07-01 14:16:02,321 [DEBUG] src.analytics.people_counter: Track 18 entered zone 'entry_zone'.
+2026-07-01 14:16:02,724 [INFO] smart_zone_analytics: Processed 180 frames...
+2026-07-01 14:16:03,571 [DEBUG] src.tracking.tracker: Dropping stale track_id=19
+2026-07-01 14:16:03,571 [DEBUG] src.analytics.people_counter: Track 18 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:16:03,572 [DEBUG] src.analytics.people_counter: Track 14 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:16:04,139 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'entry_zone'.
+2026-07-01 14:16:04,445 [DEBUG] src.analytics.people_counter: Track 14 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:16:04,984 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:16:05,513 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'entry_zone'.
+2026-07-01 14:16:06,041 [DEBUG] src.analytics.people_counter: Track 8 entered zone 'entry_zone'.
+2026-07-01 14:16:06,042 [DEBUG] src.analytics.people_counter: Track 18 entered zone 'entry_zone'.
+2026-07-01 14:16:06,343 [DEBUG] src.analytics.people_counter: Track 8 exited zone 'entry_zone'.
+2026-07-01 14:16:06,643 [DEBUG] src.analytics.people_counter: Track 14 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:16:07,455 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'exit_zone'.
+2026-07-01 14:16:07,748 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:16:07,748 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:16:07,748 [DEBUG] src.analytics.people_counter: Track 18 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:16:07,749 [DEBUG] src.analytics.people_counter: Track 14 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:16:09,223 [DEBUG] src.analytics.people_counter: Track 18 entered zone 'entry_zone'.
+2026-07-01 14:16:09,505 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:16:10,309 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'exit_zone'.
+2026-07-01 14:16:10,570 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'entry_zone'.
+2026-07-01 14:16:10,570 [DEBUG] src.analytics.people_counter: Track 14 exited zone 'exit_zone'.
+2026-07-01 14:16:11,227 [INFO] smart_zone_analytics: Processed 210 frames...
+2026-07-01 14:16:11,379 [DEBUG] src.analytics.people_counter: Track 15 exited zone 'exit_zone'.
+2026-07-01 14:16:13,991 [DEBUG] src.analytics.people_counter: Track 18 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:16:14,279 [DEBUG] src.tracking.tracker: Dropping stale track_id=17
+2026-07-01 14:16:14,563 [DEBUG] src.analytics.people_counter: Track 18 entered zone 'entry_zone'.
+2026-07-01 14:16:14,847 [DEBUG] src.analytics.people_counter: Track 3 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:16:15,324 [INFO] smart_zone_analytics: Pipeline finished. Processed 224 frames.
+2026-07-01 14:16:15,325 [INFO] smart_zone_analytics: Final summary: total_occupancy=2, total_entries=81, total_exits=79
+2026-07-01 14:16:15,325 [INFO] smart_zone_analytics:   Zone 'entry_zone': occupancy=2 max=7 entries=65 exits=63
+2026-07-01 14:16:15,325 [INFO] smart_zone_analytics:   Zone 'exit_zone': occupancy=0 max=4 entries=16 exits=16
+2026-07-01 14:20:28,634 [INFO] smart_zone_analytics: Starting Smart Zone Analytics pipeline (config=/home/nishchay/AI-ML-Projects/smart-zone-analytics-python/config/config.yaml)
+2026-07-01 14:20:28,715 [INFO] src.tracking.tracker: Initialized Tracker with backend='centroid'.
+2026-07-01 14:20:28,715 [DEBUG] src.analytics.zone_manager: Added zone 'entry_zone' with 4 vertices.
+2026-07-01 14:20:28,715 [DEBUG] src.analytics.zone_manager: Added zone 'exit_zone' with 4 vertices.
+2026-07-01 14:20:28,715 [INFO] src.analytics.zone_manager: Initialized ZoneManager with 2 zone(s): ['entry_zone', 'exit_zone']
+2026-07-01 14:20:28,716 [INFO] src.analytics.people_counter: Initialized PeopleCounter for zones: ['entry_zone', 'exit_zone']
+2026-07-01 14:20:28,716 [INFO] src.analytics.occupancy: Initialized OccupancyTracker for zones: ['entry_zone', 'exit_zone']
+2026-07-01 14:20:28,832 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 14:20:28,833 [DEBUG] src.utils.video_utils: Video info for /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4: VideoInfo(width=3840, height=2160, fps=30.0, frame_count=224, codec='h264')
+2026-07-01 14:20:28,914 [INFO] src.utils.video_utils: Opened video: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/videos/7652287-uhd_3840_2160_30fps.mp4
+2026-07-01 14:20:28,919 [INFO] src.utils.video_utils: Created video writer: /home/nishchay/AI-ML-Projects/smart-zone-analytics-python/outputs/processed_video.mp4 (3840x2160 @ 30.00 fps, codec=mp4v)
+2026-07-01 14:20:29,467 [DEBUG] src.tracking.tracker: Created new track_id=1
+2026-07-01 14:20:29,467 [DEBUG] src.tracking.tracker: Created new track_id=2
+2026-07-01 14:20:29,467 [DEBUG] src.tracking.tracker: Created new track_id=3
+2026-07-01 14:20:29,467 [DEBUG] src.tracking.tracker: Created new track_id=4
+2026-07-01 14:20:29,467 [DEBUG] src.tracking.tracker: Created new track_id=5
+2026-07-01 14:20:29,467 [DEBUG] src.tracking.tracker: Created new track_id=6
+2026-07-01 14:20:29,467 [DEBUG] src.tracking.tracker: Created new track_id=7
+2026-07-01 14:20:29,468 [DEBUG] src.analytics.people_counter: Track 1 entered zone 'exit_zone'.
+2026-07-01 14:20:29,468 [DEBUG] src.analytics.people_counter: Track 2 entered zone 'exit_zone'.
+2026-07-01 14:20:29,468 [DEBUG] src.analytics.people_counter: Track 3 entered zone 'entry_zone'.
+2026-07-01 14:20:29,468 [DEBUG] src.analytics.people_counter: Track 4 entered zone 'exit_zone'.
+2026-07-01 14:20:29,468 [DEBUG] src.analytics.people_counter: Track 5 entered zone 'entry_zone'.
+2026-07-01 14:20:29,468 [DEBUG] src.analytics.people_counter: Track 6 entered zone 'exit_zone'.
+2026-07-01 14:20:29,468 [DEBUG] src.analytics.people_counter: Track 7 entered zone 'entry_zone'.
+2026-07-01 14:20:29,468 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 3
+2026-07-01 14:20:29,468 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'exit_zone': 4
+2026-07-01 14:20:30,493 [DEBUG] src.tracking.tracker: Created new track_id=8
+2026-07-01 14:20:30,493 [DEBUG] src.analytics.people_counter: Track 8 entered zone 'entry_zone'.
+2026-07-01 14:20:30,493 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 4
+2026-07-01 14:20:37,866 [INFO] smart_zone_analytics: Processed 30 frames...
+2026-07-01 14:20:38,033 [DEBUG] src.tracking.tracker: Created new track_id=9
+2026-07-01 14:20:38,033 [DEBUG] src.analytics.people_counter: Track 9 entered zone 'entry_zone'.
+2026-07-01 14:20:38,033 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 5
+2026-07-01 14:20:38,552 [DEBUG] src.tracking.tracker: Created new track_id=10
+2026-07-01 14:20:38,552 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:20:38,552 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'exit_zone': 5
+2026-07-01 14:20:38,811 [DEBUG] src.tracking.tracker: Created new track_id=11
+2026-07-01 14:20:38,812 [DEBUG] src.analytics.people_counter: Track 11 entered zone 'entry_zone'.
+2026-07-01 14:20:38,812 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 6
+2026-07-01 14:20:39,332 [DEBUG] src.tracking.tracker: Dropping stale track_id=6
+2026-07-01 14:20:39,332 [DEBUG] src.analytics.people_counter: Track 6 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:20:41,383 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:20:41,384 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:20:41,384 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 7
+2026-07-01 14:20:43,198 [DEBUG] src.tracking.tracker: Created new track_id=12
+2026-07-01 14:20:43,199 [DEBUG] src.analytics.people_counter: Track 12 entered zone 'exit_zone'.
+2026-07-01 14:20:43,722 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:20:43,723 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:20:43,992 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:20:43,992 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:20:45,587 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:20:45,587 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:20:45,694 [INFO] smart_zone_analytics: Processed 60 frames...
+2026-07-01 14:20:46,380 [DEBUG] src.tracking.tracker: Dropping stale track_id=1
+2026-07-01 14:20:46,381 [DEBUG] src.analytics.people_counter: Track 1 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:20:46,645 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:20:46,645 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:20:47,183 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:20:47,183 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:20:47,443 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:20:47,443 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:20:47,714 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:20:47,714 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:20:48,756 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:20:48,757 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:20:50,100 [DEBUG] src.tracking.tracker: Created new track_id=13
+2026-07-01 14:20:50,101 [DEBUG] src.analytics.people_counter: Track 13 entered zone 'entry_zone'.
+2026-07-01 14:20:50,101 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 8
+2026-07-01 14:20:50,637 [DEBUG] src.tracking.tracker: Created new track_id=14
+2026-07-01 14:20:50,637 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'entry_zone'.
+2026-07-01 14:20:50,637 [DEBUG] src.analytics.occupancy: New max occupancy for zone 'entry_zone': 9
+2026-07-01 14:20:50,906 [DEBUG] src.tracking.tracker: Dropping stale track_id=11
+2026-07-01 14:20:50,907 [DEBUG] src.analytics.people_counter: Track 11 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:20:53,618 [INFO] smart_zone_analytics: Processed 90 frames...
+2026-07-01 14:20:55,113 [DEBUG] src.tracking.tracker: Created new track_id=15
+2026-07-01 14:20:55,114 [DEBUG] src.analytics.people_counter: Track 15 entered zone 'exit_zone'.
+2026-07-01 14:20:58,016 [DEBUG] src.tracking.tracker: Created new track_id=16
+2026-07-01 14:20:59,072 [DEBUG] src.tracking.tracker: Dropping stale track_id=12
+2026-07-01 14:20:59,073 [DEBUG] src.analytics.people_counter: Track 12 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:20:59,612 [DEBUG] src.tracking.tracker: Dropping stale track_id=7
+2026-07-01 14:20:59,612 [DEBUG] src.analytics.people_counter: Track 7 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:21:01,560 [INFO] smart_zone_analytics: Processed 120 frames...
+2026-07-01 14:21:02,509 [DEBUG] src.tracking.tracker: Dropping stale track_id=9
+2026-07-01 14:21:02,510 [DEBUG] src.analytics.people_counter: Track 9 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:21:03,556 [DEBUG] src.tracking.tracker: Created new track_id=17
+2026-07-01 14:21:03,556 [DEBUG] src.analytics.people_counter: Track 17 entered zone 'entry_zone'.
+2026-07-01 14:21:04,101 [DEBUG] src.tracking.tracker: Dropping stale track_id=2
+2026-07-01 14:21:04,102 [DEBUG] src.analytics.people_counter: Track 2 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:21:04,366 [DEBUG] src.tracking.tracker: Dropping stale track_id=13
+2026-07-01 14:21:04,366 [DEBUG] src.analytics.people_counter: Track 13 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:21:04,917 [DEBUG] src.analytics.people_counter: Track 17 exited zone 'entry_zone'.
+2026-07-01 14:21:05,706 [DEBUG] src.tracking.tracker: Dropping stale track_id=4
+2026-07-01 14:21:05,706 [DEBUG] src.tracking.tracker: Created new track_id=18
+2026-07-01 14:21:05,706 [DEBUG] src.analytics.people_counter: Track 17 entered zone 'entry_zone'.
+2026-07-01 14:21:05,706 [DEBUG] src.analytics.people_counter: Track 18 entered zone 'entry_zone'.
+2026-07-01 14:21:05,707 [DEBUG] src.analytics.people_counter: Track 4 vanished while inside zone 'exit_zone'; recorded exit.
+2026-07-01 14:21:06,506 [DEBUG] src.tracking.tracker: Dropping stale track_id=16
+2026-07-01 14:21:08,078 [DEBUG] src.analytics.people_counter: Track 8 exited zone 'entry_zone'.
+2026-07-01 14:21:09,408 [DEBUG] src.tracking.tracker: Created new track_id=19
+2026-07-01 14:21:09,537 [INFO] smart_zone_analytics: Processed 150 frames...
+2026-07-01 14:21:10,524 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:21:10,524 [DEBUG] src.analytics.people_counter: Track 17 exited zone 'entry_zone'.
+2026-07-01 14:21:11,321 [DEBUG] src.analytics.people_counter: Track 15 exited zone 'exit_zone'.
+2026-07-01 14:21:11,593 [DEBUG] src.analytics.people_counter: Track 8 entered zone 'entry_zone'.
+2026-07-01 14:21:11,863 [DEBUG] src.tracking.tracker: Dropping stale track_id=5
+2026-07-01 14:21:11,864 [DEBUG] src.analytics.people_counter: Track 8 exited zone 'entry_zone'.
+2026-07-01 14:21:11,864 [DEBUG] src.analytics.people_counter: Track 15 entered zone 'exit_zone'.
+2026-07-01 14:21:11,864 [DEBUG] src.analytics.people_counter: Track 5 vanished while inside zone 'entry_zone'; recorded exit.
+2026-07-01 14:21:13,855 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:21:14,969 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:21:15,240 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:21:15,796 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:21:17,932 [INFO] smart_zone_analytics: Processed 180 frames...
+2026-07-01 14:21:18,622 [DEBUG] src.tracking.tracker: Dropping stale track_id=19
+2026-07-01 14:21:20,128 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'entry_zone'.
+2026-07-01 14:21:21,179 [DEBUG] src.analytics.people_counter: Track 8 entered zone 'entry_zone'.
+2026-07-01 14:21:21,442 [DEBUG] src.analytics.people_counter: Track 8 exited zone 'entry_zone'.
+2026-07-01 14:21:22,626 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'exit_zone'.
+2026-07-01 14:21:22,626 [DEBUG] src.analytics.people_counter: Track 14 exited zone 'entry_zone'.
+2026-07-01 14:21:22,917 [DEBUG] src.analytics.people_counter: Track 10 entered zone 'exit_zone'.
+2026-07-01 14:21:22,917 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'entry_zone'.
+2026-07-01 14:21:24,678 [DEBUG] src.analytics.people_counter: Track 10 exited zone 'exit_zone'.
+2026-07-01 14:21:25,775 [DEBUG] src.analytics.people_counter: Track 14 entered zone 'entry_zone'.
+2026-07-01 14:21:25,775 [DEBUG] src.analytics.people_counter: Track 14 exited zone 'exit_zone'.
+2026-07-01 14:21:26,518 [INFO] smart_zone_analytics: Processed 210 frames...
+2026-07-01 14:21:26,691 [DEBUG] src.analytics.people_counter: Track 15 exited zone 'exit_zone'.
+2026-07-01 14:21:29,268 [DEBUG] src.tracking.tracker: Dropping stale track_id=17
+2026-07-01 14:21:30,219 [INFO] smart_zone_analytics: Pipeline finished. Processed 224 frames.
+2026-07-01 14:21:30,220 [INFO] smart_zone_analytics: Final summary: total_occupancy=3, total_entries=36, total_exits=33
+2026-07-01 14:21:30,220 [INFO] smart_zone_analytics:   Zone 'entry_zone': occupancy=3 max=9 entries=22 exits=19
+2026-07-01 14:21:30,220 [INFO] smart_zone_analytics:   Zone 'exit_zone': occupancy=0 max=5 entries=14 exits=14
