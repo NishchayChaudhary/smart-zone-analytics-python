@@ -1,0 +1,39 @@
+# Smart Zone Analytics - Default Configuration
+# All paths are relative to the project root and are resolved with
+# pathlib at runtime. Do not hardcode absolute paths anywhere else
+# in the codebase — always read them from this file.
+
+model:
+  model_path: "models/yolov8n.pt"   # Path to YOLOv8 weights (.pt or .onnx)
+  confidence: 0.4                   # Minimum detection confidence [0, 1]
+  iou: 0.45                         # IoU threshold for NMS [0, 1]
+  device: "mps"                     # "cpu", "cuda:0", or "mps" (Apple Silicon)
+  classes: [0]                      # COCO class ids to detect; 0 = person
+
+tracker:
+  backend: "centroid"               # "centroid" (placeholder) or "bytetrack"
+  max_distance: 80.0                # Max centroid distance (px) for matching
+  max_missed_frames: 30             # Frames before a lost track is dropped
+
+video:
+  video_path: "videos/sample.mp4"   # Input video path
+  output_path: "outputs/processed_video.mp4"  # Annotated output video path
+  save_video: true                  # Whether to write annotated output video
+  save_frames: false                # Whether to save individual annotated frames
+  output_directory: "outputs"       # Base directory for videos/frames/analytics
+  output_codec: "mp4v"              # Falls back to mp4v automatically if unsupported
+
+zones:
+  # Example polygon zone definitions (pixel coordinates).
+  - name: "entry_zone"
+    polygon: [[100, 200], [400, 200], [400, 500], [100, 500]]
+  - name: "exit_zone"
+    polygon: [[500, 200], [800, 200], [800, 500], [500, 500]]
+
+dashboard:
+  title: "Smart Zone Analytics"
+  refresh_interval_seconds: 1.0
+
+logging:
+  level: "INFO"                     # DEBUG, INFO, WARNING, ERROR
+  log_file: "outputs/logs/app.log"
