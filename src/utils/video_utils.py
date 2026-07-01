@@ -28,7 +28,16 @@ _FALLBACK_CODEC = "mp4v"
 
 @dataclass(frozen=True)
 class VideoInfo:
-    """Metadata describing a video file."""
+    """Metadata describing a video file.
+
+    Attributes:
+        width: Frame width in pixels.
+        height: Frame height in pixels.
+        fps: Frames per second.
+        frame_count: Total number of frames (0 if unknown, e.g. for
+            some live streams).
+        codec: Four-character codec code reported by OpenCV.
+    """
 
     width: int
     height: int
@@ -150,7 +159,7 @@ def create_video_writer(
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     def _try_open(fourcc_code: str) -> cv2.VideoWriter:
-        fourcc = cv2.VideoWriter_fourcc(*fourcc_code)
+        fourcc = cv2.VideoWriter_fourcc(*fourcc_code)  # type: ignore[attr-defined]
         return cv2.VideoWriter(str(output_path), fourcc, fps, (width, height))
 
     writer = _try_open(codec)
@@ -208,6 +217,49 @@ def read_frames(video_path: Path) -> Iterator[np.ndarray]:
         logger.info(
             "Finished reading %d frames from %s", frame_index, video_path
         )
+
+
+def save_frame(
+    frame: np.ndarray,
+    output_path: Path,
+    create_parents: bool = True,
+) -> Path:
+    """Saves a single frame to disk as an image file.
+
+    Useful for saving annotated snapshots, debugging frames, or
+    periodic samples from a video stream. The image format is
+    inferred by OpenCV from the file extension in `output_path`
+    (e.g. ".jpg", ".png").
+
+    Args:
+        frame: BGR frame to save, as a numpy array of shape (H, W, 3).
+        output_path: Destination path for the image file, including
+            extension (e.g. Path("outputs/frames/frame_001.jpg")).
+        create_parents: If True, creates any missing parent
+            directories before writing.
+
+    Returns:
+        The output_path the frame was written to.
+
+    Raises:
+        ValueError: If frame is None or empty.
+        RuntimeError: If OpenCV fails to write the image file.
+    """
+    if frame is None or frame.size == 0:
+        raise ValueError("Cannot save an empty or None frame.")
+
+    output_path = Path(output_path)
+
+    if create_parents:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    success = cv2.imwrite(str(output_path), frame)
+    if not success:
+        logger.error("Failed to write frame to %s", output_path)
+        raise RuntimeError(f"Could not save frame to: {output_path}")
+
+    logger.debug("Saved frame to %s", output_path)
+    return output_path
 
 
 def save_video(
